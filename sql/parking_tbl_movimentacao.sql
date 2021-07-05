@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 8.0.25, for Win64 (x86_64)
+--
+-- Host: localhost    Database: parking
+-- ------------------------------------------------------
+-- Server version	8.0.25
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_movimentacao`
+--
+
+DROP TABLE IF EXISTS `tbl_movimentacao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_movimentacao` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `placa` varchar(45) DEFAULT NULL,
+  `modelo` varchar(45) DEFAULT NULL,
+  `data_entrada` date DEFAULT NULL,
+  `data_saida` date DEFAULT NULL,
+  `tempo` time DEFAULT NULL,
+  `valor_pago` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_movimentacao`
+--
+
+LOCK TABLES `tbl_movimentacao` WRITE;
+/*!40000 ALTER TABLE `tbl_movimentacao` DISABLE KEYS */;
+INSERT INTO `tbl_movimentacao` VALUES (59,'1233','3322','2021-07-02',NULL,'09:24:12',38),(60,'QPM1409','1230','2021-07-02',NULL,'09:24:19',38),(61,'1233','3322','2021-07-02',NULL,'09:27:04',38),(62,'TESTE1','TESTE2','2021-07-02',NULL,'09:53:35',38),(63,'QPM1306','FORD KA','2021-07-02',NULL,'10:10:31',42),(71,'12332','123','2021-07-02',NULL,'11:00:07',NULL),(72,'142','421','2021-07-02',NULL,'11:02:10',NULL),(80,'teste','teste','2021-07-05',NULL,'07:35:53',NULL),(81,'grgergerg','ergergre','2021-07-05',NULL,'08:54:55',NULL),(82,'1053','1053','2021-07-05',NULL,'10:53:15',NULL),(83,'414','142','2021-07-05',NULL,'14:01:57',NULL),(84,'412412','412412421','2021-07-05',NULL,'14:02:03',NULL);
+/*!40000 ALTER TABLE `tbl_movimentacao` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-07-05 15:37:04
